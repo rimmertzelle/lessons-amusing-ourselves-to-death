@@ -4,18 +4,78 @@ theme: default
 paginate: true
 ---
 
+<style>
+section {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  color: #1d1d1f;
+  background: #ffffff;
+  padding: 60px 72px;
+}
+
+h1 {
+  font-size: 1.9em;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #1d1d1f;
+}
+
+h2 {
+  font-weight: 400;
+  color: #6e6e73;
+  letter-spacing: -0.01em;
+}
+
+blockquote {
+  border-left: 3px solid #0071e3;
+  padding-left: 1em;
+  color: #3a3a3c;
+  font-style: italic;
+  margin-left: 0;
+}
+
+table { width: 100%; border-collapse: collapse; }
+th { background: #f5f5f7; font-weight: 600; color: #1d1d1f; text-align: left; }
+td, th { padding: 0.5em 0.8em; border-bottom: 1px solid #d2d2d7; }
+
+section::after { color: #6e6e73; font-size: 0.65em; }
+
+/* Dark slides */
+section.dark {
+  background: #1d1d1f !important;
+  color: #f5f5f7;
+}
+section.dark h1 { color: #f5f5f7; }
+section.dark h2 { color: #a1a1a6; }
+section.dark p, section.dark li { color: #e0e0e5; }
+section.dark blockquote { border-left-color: #0071e3; color: #d2d2d7; }
+section.dark::after { color: #48484a; }
+
+/* Exercise slides */
+section.exercise {
+  background: #f5f5f7 !important;
+}
+section.exercise h1 { color: #0071e3; }
+</style>
+
+<!-- _class: dark lead -->
+
 # Technology That Makes Us Dumber
+
 ## Or Does It?
 
-*Based on Neil Postman — Amusing Ourselves to Death (1985)*
+*Neil Postman — Amusing Ourselves to Death (1985)*
 
 ---
+
+<!-- _class: dark lead -->
 
 # You are scrolling through your feed for 40 minutes without learning anything you can use tomorrow.
 
 ## Is that your fault — or the app's fault?
 
 ---
+
+<!-- _class: dark lead -->
 
 # Before we answer that...
 
@@ -24,8 +84,6 @@ Take 2 minutes.
 Think about your honest answer.
 
 ---
-
-<!-- Prior Knowledge Check -->
 
 # What do you actually believe?
 
@@ -93,6 +151,8 @@ No context. No follow-up. No consequence.
 
 ---
 
+<!-- _class: exercise -->
+
 # Exercise 1 — The Feed Experiment (10 min)
 
 Open any social media app. Scroll for **60 seconds**.
@@ -139,6 +199,8 @@ Outrage, fear, and novelty drive engagement better than nuance.
 
 ---
 
+<!-- _class: exercise -->
+
 # Exercise 2 — Design Against Postman (10 min)
 
 You are junior developers. Your team lead says:
@@ -167,19 +229,21 @@ Postman opens his book with a warning:
 |---|---|
 | Control through fear | Control through pleasure |
 | Censorship and force | Distraction and comfort |
-| We are oppressed by what we hate | We are controlled by what we love |
+| Oppressed by what we hate | Controlled by what we love |
 
 ---
 
-# Postman's conclusion:
+<!-- _class: dark lead -->
 
-> "Huxley, not Orwell, was right."
+# "Huxley, not Orwell, was right."
 
 We don't need a Big Brother to keep us uninformed.
 
 We just need an algorithm that knows we'll watch one more video.
 
 ---
+
+<!-- _class: exercise -->
 
 # Exercise 3 — Huxley or Orwell? (10 min)
 
@@ -194,6 +258,8 @@ For each: label it, explain in one sentence, discuss whether the government/corp
 
 ---
 
+<!-- _class: dark lead -->
+
 # So — whose fault is it?
 
 Return to the opening question.
@@ -204,9 +270,11 @@ Has anything shifted?
 
 ---
 
+<!-- _class: dark -->
+
 # Reflection
 
-Take 3 minutes. Write your answers individually.
+Take 3 minutes. Write individually.
 
 1. "Before today, I thought the problem with misinformation was… Now I think…"
 2. "As someone who will build technology: one thing I want to keep in mind is…"
@@ -224,16 +292,18 @@ Take 3 minutes. Write your answers individually.
 
 ---
 
+<!-- _class: dark -->
+
 # Postman's challenge to you
 
-> "We were not born critical of existing media. Television is our culture's principal mode of knowing about itself. Therefore — and this is the critical point — how television stages the world becomes the model for how the world is properly to be staged."
+> "How television stages the world becomes the model for how the world is properly to be staged."
 
-Replace "television" with the system you are about to build.
+Replace *television* with the system you are about to build.
 
 ---
+
+<!-- _class: dark lead -->
 
 # Thank you
 
 *Neil Postman — Amusing Ourselves to Death (1985)*
-
-"We must come to understand that Huxley, not Orwell, was right."
